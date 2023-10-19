@@ -1,0 +1,49 @@
+{% extends "template.html" %}
+
+{%block conteudo %}
+
+<style>
+    .foto_banner{
+
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
+    }
+</style>
+   <main>
+        <section>
+            <div class="container01">
+                <div class="cx01">
+                    <center>
+                    <h5>PIZZA PLANET</h5></center>
+                    <center><h6>O melhor site de pizzas do mundooo</h6></center>
+                </div>
+
+                <div class="cx02">
+                    <figure>
+                        <center>
+                        <img src="./static/img/{{foto_banner}}" alt class="circle responsive-img"></center>
+                    </figure>
+                </div>
+            </div>
+
+            <div class = "container02">
+                <div class="cx02">
+                     <center>
+                    <div class="row">
+                        <div class="col s12 m5">
+
+                          <div class="card-panel #ffffff white">
+                            <span class="black-text">{{curiosidades}}</span>
+                      </div>
+                    </div>
+                  </div>
+                     </center>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+{%endblock%}

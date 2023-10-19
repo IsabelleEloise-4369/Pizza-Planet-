@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+
+{%block conteudo %}
+<center>
+ <h4>Emails Cadastrados</h4></center>
+<table>
+
+   <thead class="red accent-2">
+         <tr>
+
+            <th> E-mail</th>
+        </tr>
+
+   </thead>
+
+   <tbody>
+     <tr>
+       {%for item in campo_emails%}
+     <td>{{item}}</td>
+
+
+    </tr>
+    {% endfor %}
+   </tbody>
+  </table>
+
+  {%endblock%}
